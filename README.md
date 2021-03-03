@@ -6,7 +6,7 @@ to get started:
 
 endpoints:
 
-create user:
+CREATE USER:
 POST
 http://localhost:8080/api/v1/users/registration
   
@@ -15,7 +15,7 @@ http://localhost:8080/api/v1/users/registration
           "password": "12345678"
         }
 
-login
+LOGIN:
 POST
 http://localhost:8080/api/v1/users/login
   
@@ -24,7 +24,7 @@ http://localhost:8080/api/v1/users/login
           "password": "12345678"
         }
         
-update user:
+UPDATE USER:
 PUT
 http://localhost:8080/api/v1/users
 
@@ -36,20 +36,20 @@ Headers: "Authorization" : "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJpYUB1a3Iu
           "password": "12345678"
         }
  
-get user by id:
+GET USER BY ID:
 GET
 http://localhost:8080/api/v1/users/{id}
 
 Headers: "Authorization" : "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJpYUB1a3IubmV0IiwiaWF0IjoxNjE0ODA0NDgyLCJleHAiOjE2MTQ4MTE2ODJ9.z0PiRCG8hVbnlcnVZzezf8qFhXb81veb2ut1q8JkFB8"
         
        
-delete user by id:
+DELETE USER BY ID:
 DELETE
 http://localhost:8080/api/v1/users/{id}
 
 Headers: "Authorization" : "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJpYUB1a3IubmV0IiwiaWF0IjoxNjE0ODA0NDgyLCJleHAiOjE2MTQ4MTE2ODJ9.z0PiRCG8hVbnlcnVZzezf8qFhXb81veb2ut1q8JkFB8"
  
-create vacancy:
+CREATE VACANCY:
 POST
 http://localhost:8080/api/v1/vacancies
 
@@ -64,7 +64,7 @@ Headers: "Authorization" : "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJpYUB1a3Iu
           "status": "GIVE_IN"
         }
 
-update vacancy:
+UPDATE VACANCY:
 PUT
 http://localhost:8080/api/v1/vacancies
 
@@ -80,13 +80,13 @@ Headers: "Authorization" : "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJpYUB1a3Iu
           "status": "GIVE_IN"
         }
         
-send message:
+SEND MESSAGES:
 GET
 http://localhost:8080/api/v1/vacancies/sendMessages
 
 Headers: "Authorization" : "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJpYUB1a3IubmV0IiwiaWF0IjoxNjE0ODA0NDgyLCJleHAiOjE2MTQ4MTE2ODJ9.z0PiRCG8hVbnlcnVZzezf8qFhXb81veb2ut1q8JkFB8"
   
-get vacancies:
+GET VACANCIES:
 GET
 http://localhost:8080/api/v1/vacancies
 
