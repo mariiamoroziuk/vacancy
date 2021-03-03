@@ -1,1 +1,1 @@
-web: java -jar target/java-springboot-heroku-template-0.0.3-SNAPSHOT.jar
+web: java -jar target/vacancy_diary-1.0-SNAPSHOT.jar
