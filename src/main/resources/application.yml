@@ -17,14 +17,6 @@ spring:
           writetimeout: 50000
           starttls:
             enable: true
-#  datasource:
-#    password: secret
-#    url: jdbc:postgresql://localhost:5432/postgres
-#    username: postgres
-#  jpa:
-#    hibernate:
-#      ddl-auto: update
-#    show-sql: true
   datasource:
     password: f069d0f0bd5034aa24806449914aec4379163c2e944ead4612264cffef70bae7
     url: jdbc:postgresql://ec2-54-196-89-124.compute-1.amazonaws.com:5432/dbtm3qi35ca4cq
