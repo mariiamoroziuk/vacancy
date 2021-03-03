@@ -9,6 +9,7 @@ endpoints:
 create user:
 POST
 http://localhost:8080/api/v1/users/registration
+  
   body: {
           "email": "maria@ukr.net",
           "password": "12345678"
@@ -17,6 +18,7 @@ http://localhost:8080/api/v1/users/registration
 login
 POST
 http://localhost:8080/api/v1/users/login
+  
   body: {
           "email": "maria@ukr.net",
           "password": "12345678"
@@ -25,7 +27,9 @@ http://localhost:8080/api/v1/users/login
 update user:
 PUT
 http://localhost:8080/api/v1/users
+
 Headers: "Authorization" : "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJpYUB1a3IubmV0IiwiaWF0IjoxNjE0ODA0NDgyLCJleHAiOjE2MTQ4MTE2ODJ9.z0PiRCG8hVbnlcnVZzezf8qFhXb81veb2ut1q8JkFB8"
+  
   body: {
           "id": 13,
           "email": "maria@ukr.net",
@@ -35,18 +39,22 @@ Headers: "Authorization" : "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJpYUB1a3Iu
 get user by id:
 GET
 http://localhost:8080/api/v1/users/{id}
+
 Headers: "Authorization" : "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJpYUB1a3IubmV0IiwiaWF0IjoxNjE0ODA0NDgyLCJleHAiOjE2MTQ4MTE2ODJ9.z0PiRCG8hVbnlcnVZzezf8qFhXb81veb2ut1q8JkFB8"
         
        
 delete user by id:
 DELETE
 http://localhost:8080/api/v1/users/{id}
+
 Headers: "Authorization" : "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJpYUB1a3IubmV0IiwiaWF0IjoxNjE0ODA0NDgyLCJleHAiOjE2MTQ4MTE2ODJ9.z0PiRCG8hVbnlcnVZzezf8qFhXb81veb2ut1q8JkFB8"
  
 create vacancy:
 POST
 http://localhost:8080/api/v1/vacancies
+
 Headers: "Authorization" : "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJpYUB1a3IubmV0IiwiaWF0IjoxNjE0ODA0NDgyLCJleHAiOjE2MTQ4MTE2ODJ9.z0PiRCG8hVbnlcnVZzezf8qFhXb81veb2ut1q8JkFB8"
+  
   body: {
           "name": "vacancy_name",
           "position": "vacancy_position",
@@ -59,7 +67,9 @@ Headers: "Authorization" : "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJpYUB1a3Iu
 update vacancy:
 PUT
 http://localhost:8080/api/v1/vacancies
+
 Headers: "Authorization" : "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJpYUB1a3IubmV0IiwiaWF0IjoxNjE0ODA0NDgyLCJleHAiOjE2MTQ4MTE2ODJ9.z0PiRCG8hVbnlcnVZzezf8qFhXb81veb2ut1q8JkFB8"
+  
   body: {
           "id": 78,
           "name": "vacancy_name",
@@ -73,12 +83,15 @@ Headers: "Authorization" : "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJpYUB1a3Iu
 send message:
 GET
 http://localhost:8080/api/v1/vacancies/sendMessages
+
 Headers: "Authorization" : "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJpYUB1a3IubmV0IiwiaWF0IjoxNjE0ODA0NDgyLCJleHAiOjE2MTQ4MTE2ODJ9.z0PiRCG8hVbnlcnVZzezf8qFhXb81veb2ut1q8JkFB8"
   
 get vacancies:
 GET
 http://localhost:8080/api/v1/vacancies
+
 Headers: "Authorization" : "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJpYUB1a3IubmV0IiwiaWF0IjoxNjE0ODA0NDgyLCJleHAiOjE2MTQ4MTE2ODJ9.z0PiRCG8hVbnlcnVZzezf8qFhXb81veb2ut1q8JkFB8"
+
 Optional query params:  int size(items in page),
                         int page(page number),
                         String status,
