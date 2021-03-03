@@ -1,0 +1,40 @@
+springdoc:
+  swagger-ui:
+    path: /doc
+---
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: danitfinalfs11
+    password: danit__finalfs11
+    properties:
+      mail:
+        smtp:
+          auth: true
+          connectiontimeout: 50000
+          timeout: 50000
+          writetimeout: 50000
+          starttls:
+            enable: true
+#  datasource:
+#    password: secret
+#    url: jdbc:postgresql://localhost:5432/postgres
+#    username: postgres
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+  datasource:
+    password: f069d0f0bd5034aa24806449914aec4379163c2e944ead4612264cffef70bae7
+    url: jdbc:postgresql://ec2-54-196-89-124.compute-1.amazonaws.com:5432/dbtm3qi35ca4cq
+    username: jhisgcobpfpstk
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+jwt:
+  secret: ;#?T+7pnB^(fUg4
+  expiration: 7200
+  header: Authorization
+
