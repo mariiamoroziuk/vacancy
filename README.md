@@ -4,7 +4,10 @@ to get started:
 2. in the main/resources/application.yml change lines 21-23 - write down the settings for your database. And also write down the settings for sending mail in lines 7-10.
 3. to automatically populate the database in the main/java/vacancy_diary/DBRunner uncomment 19 line.
 
+or you can try it on heroku: https://vacancydiary.herokuapp.com/
+
 endpoints:
+Swagger on <server>/doc
 
 CREATE USER:
 POST
